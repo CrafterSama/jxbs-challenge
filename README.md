@@ -16,7 +16,7 @@
 - **Type Safety**: Comprehensive TypeScript interfaces and validation
 
 ### Key Technologies
-- **Next.js 15**: App Router with Server Components
+- **Next.js 15**: API Router with Server Components
 - **TypeScript**: Full type safety and developer experience
 - **Vitest**: Comprehensive testing suite
 
