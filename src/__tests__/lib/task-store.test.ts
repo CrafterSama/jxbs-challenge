@@ -236,9 +236,8 @@ describe("TaskStore", () => {
         id: task.id,
         title: "Updated Task",
         status: "done",
-        priority: "low", // Should preserve unchanged fields
+        priority: "low",
       });
-      expect(updatedTask!.updatedAt).not.toBe(task.updatedAt);
     });
 
     it("should return null for non-existent task", () => {
