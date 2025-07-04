@@ -27,24 +27,14 @@ The application uses **Vitest** for fast, modern testing with excellent TypeScri
 ### Running Tests
 
 Run the test suite:
-\`\`\`bash
+```bash
 npm test
-\`\`\`
+```
 
 Run tests in watch mode:
-\`\`\`bash
+```bash
 npm run test:watch
-\`\`\`
-
-Run tests with UI (interactive test runner):
-\`\`\`bash
-npm run test:ui
-\`\`\`
-
-Run tests with coverage report:
-\`\`\`bash
-npm run test:coverage
-\`\`\`
+```
 
 ### Test Coverage
 
@@ -65,40 +55,40 @@ The test suite includes comprehensive coverage of:
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+- Node.js 20+ 
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository
-\`\`\`bash
+```bash
 git clone <repository-url>
 cd task-management-system
-\`\`\`
+```
 
 2. Install dependencies
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 3. Run the development server
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 4. Open [http://localhost:3001](http://localhost:3001) in your browser
 
 ### Testing
 
 Run the test suite:
-\`\`\`bash
+```bash
 npm test
-\`\`\`
+```
 
 Run tests in watch mode:
-\`\`\`bash
+```bash
 npm run test:watch
-\`\`\`
+```
 
 ## API Documentation
 
@@ -106,7 +96,7 @@ npm run test:watch
 Retrieve all tasks sorted by creation date (newest first).
 
 **Response:**
-\`\`\`json
+```json
 {
   "data": [
     {
@@ -122,26 +112,26 @@ Retrieve all tasks sorted by creation date (newest first).
     }
   ]
 }
-\`\`\`
+```
 
 ### POST /api/tasks
 Create a new task.
 
 **Request Body:**
-\`\`\`json
+```json
 {
   "title": "string (required, max 100 chars)",
   "description": "string (optional, max 500 chars)",
   "priority": "low" | "medium" | "high",
   "dueDate": "ISO string (required)"
 }
-\`\`\`
+```
 
 ### PUT /api/tasks/:id
 Update an existing task.
 
 **Request Body:**
-\`\`\`json
+```json
 {
   "title": "string (optional)",
   "description": "string (optional)",
@@ -149,14 +139,14 @@ Update an existing task.
   "priority": "low" | "medium" | "high" (optional),
   "dueDate": "ISO string (optional)"
 }
-\`\`\`
+```
 
 ### DELETE /api/tasks/:id
 Delete a task by ID.
 
 **Response:**
-\`\`\`json
+```json
 {
   "message": "Task deleted successfully"
 }
-\`\`\`
+```
